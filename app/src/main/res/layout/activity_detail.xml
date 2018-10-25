@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.riad.inventory.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/productImgView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="0"
+            android:padding="20dp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Product\nName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Product\nQuantity"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Product\nPrice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/productNameTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/productQuantityTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/productPriceTxtView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/supplierTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:text="Supplier Mail : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/increaseBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Increase"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/decreaseBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decrease"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/orderBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Order"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

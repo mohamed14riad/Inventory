@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.riad.inventory.InsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameEDtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="Product Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/quantityEDtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="Product Quantity"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/priceEDtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="Product Price"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/supplierEDtText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:hint="Supplier Mail"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/pickImageBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="0"
+                android:text="Pick Image"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <ImageView
+                android:id="@+id/pickedImageView"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:scaleType="fitCenter" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0"
+            android:text="Save"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+
+</ScrollView>
